@@ -1,0 +1,38 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color App</title>
+    <style>
+        body {
+            background-color: {{ color }};
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            padding: 50px;
+            transition: background-color 0.5s;
+        }
+
+        .color-input {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a colored page!</h1>
+    <div id="colorForm" class="color-input">
+        <label for="colorPicker">Choose a color:</label>
+        <input type="color" id="colorPicker" onchange="changeColor(event)">
+    </div>
+    
+    <script>
+        function changeColor(event) {
+            document.body.style.backgroundColor = event.target.value;
+        }
+    </script>
+</body>
+</html>
