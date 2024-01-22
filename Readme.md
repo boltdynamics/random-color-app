@@ -4,4 +4,19 @@ A simple app that renders a html page that changes color each time you refresh y
 
 https://github.com/boltdynamics/random-color-app/assets/42393225/09ff1b4b-ce19-49c5-8ccd-6b243948805c
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+### Commands to run on google cloud shell
+
+* Create a folder
+```bash
+mkdir projects && cd projects
+```
+
+* Clone the repository
+```bash
+git clone https://github.com/boltdynamics/random-color-app
+```
+
+* Deploy app to Google Cloud Run
+```bash
+gcloud run deploy random-color-app --source . --allow-unauthenticated --region=us-central1 --project <project_id>
+```
