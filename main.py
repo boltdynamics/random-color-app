@@ -13,6 +13,3 @@ def run_color_app():
     """
     color = random.choice(colors)
     return render_template("index.html", color=color)
-
-if __name__ == "__main__":
-    app.run()
