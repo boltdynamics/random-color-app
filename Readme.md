@@ -2,7 +2,7 @@
 
 A simple app that renders a html page that changes color each time you refresh your screen!
 
-https://github.com/boltdynamics/random-color-app/assets/42393225/09ff1b4b-ce19-49c5-8ccd-6b243948805c
+https://github.com/boltdynamics/random-color-app/assets/42393225/127aa19e-217d-4d85-94fe-47301ae96aac
 
 ### Commands to run on google cloud shell
 
