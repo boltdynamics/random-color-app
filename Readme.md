@@ -18,5 +18,5 @@ git clone https://github.com/boltdynamics/random-color-app
 
 * Deploy app to Google Cloud Run
 ```bash
-gcloud run deploy random-color-app --source . --allow-unauthenticated --region=us-central1 --project pras-sandbox-405410
+gcloud run deploy random-color-app --source . --allow-unauthenticated --region=us-central1 --project <project_id>
 ```
