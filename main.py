@@ -1,23 +1,18 @@
-"""
-Random Color App
-"""
+from flask import Flask, render_template
 import random
 
-from fastapi import FastAPI, Request
-from fastapi.templating import Jinja2Templates
-
-app = FastAPI()
-templates = Jinja2Templates(directory="templates")
+app = Flask(__name__)
 
 # random choice of colors
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 
-
-@app.get("/")
-def run_color_app(request: Request):
+@app.route("/")
+def run_color_app():
     """
     This function returns a html template with a random color
     """
-    return templates.TemplateResponse(
-        "index.html", {"request": request, "color": random.choice(colors)}
-    )
+    color = random.choice(colors)
+    return render_template("index.html", color=color)
+
+if __name__ == "__main__":
+    app.run()
