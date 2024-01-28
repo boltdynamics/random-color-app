@@ -38,3 +38,12 @@ git clone https://github.com/boltdynamics/random-color-app
 ```bash
 gcloud run deploy random-color-app --source . --allow-unauthenticated --region=us-central1 --project <project_id>
 ```
+
+### Ask Duet AI
+
+Duet AI is integrated directly with Google Cloud Shell editor so we can write code and ask for suggestions all from the browser :)
+
+Some questions to ask Duet AI,
+
+* Please tell us about options when deploying an application to cloud run via gcloud cli, `gcloud run deploy....`
+* Write a sample flask app that renders a html page that changes color each time you refresh your screen
