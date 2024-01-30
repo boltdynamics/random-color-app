@@ -45,5 +45,5 @@ Duet AI is integrated directly with Google Cloud Shell editor so we can write co
 
 Some questions to ask Duet AI,
 
-* Please tell us about options when deploying an application to cloud run via gcloud cli, `gcloud run deploy....`
+* Provide comprehensive list of all the switches available with gcloud cli command, `gcloud run deploy....`
 * Write a sample flask app that renders a html page that changes color each time you refresh your screen
